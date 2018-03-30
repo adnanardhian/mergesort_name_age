@@ -38,11 +38,8 @@ input_file = list(map(str, input_file))
 sorted_file = mergesort(input_file)
 
 file_output = open("PATH_TO_FILE/sorted_name_age.txt", "w")
-file_output.write("============================")
-file_output.write("\n")
 for i in range(0,len(sorted_file)):
     file_output.write(str(sorted_file[i]))
     file_output.write("\n")
-file_output.write("============================")
 file_output.close()
 
